@@ -1,0 +1,47 @@
+optimizer:
+  # Learning rate ,lr, and number of steps, num_steps, are used to define t_span in solve_ivp by RK45: t_span = (0, lr * num_steps)
+  # Which integrates the belief update ordinary differential equation
+  state_lr: 0.01
+  num_steps: 100
+
+# Generative Process
+gp:
+  #Name of the Generative Process (GP): 'lotka' which is short for Lotka-Volterra
+  name: 'lotka'
+  #The time step used for solving the ODEs in GP
+  dt: 0.1
+  # Total time used to solve the ODEs in the GP
+  T: 100
+
+gm:
+  #The Flow Function for the State Dynamics Equation, f(): 'pullback' 'trigonometric'
+  dynamics: 'pullback'
+  #The Flow Function for the Observation Model, g(): 'identity'
+  likelihood: 'identity'
+  #Number of Generalised Coordinates (GPs) in x and y
+  # kx=2 means we have x and x' (and not higher temporal derivatives x'',x''', etc.)
+  # ky=1 means we have y (and not higher temporal derivatives y',y'', etc.)
+  # IF you decide to increase the values to get into the generalised coordinates of motion, make sure that:
+  # kx=ky+1 always holds!
+  kx: 2
+  ky: 1
+  #The parameters used in the noise correlation kernel for constructing the Autocovariance functions, used for building
+  #The s_x and s_y matrices, which are then used for constructing the generalised precision matrices along both x, and y.
+  #Here, h_value determines the centre of the Gaussian kernel for computing the auto-covariance matrix
+  #Here, lambda_value determines the variance of the Gaussian kernel used for calculating the auto-covariance matrix
+  # NOTE: These are related to the generalised coordinates of motion and control the smoothness of the random fluctuations
+  # along the hidden states and observations.
+  h_value: 0.0
+  lambda_value: 1.0
+
+  # Observation noise characteristics
+  noise:
+    #Noise parameters for the White Noise (The same white noise will be used for
+    #generating colored noise through convolving a kernel)
+    # 'color' or 'white'
+    gm_noise_type: 'color'
+    gm_white_noise_mu: 0.0
+    gm_white_noise_sigma: 1.0
+    #These two will only take effect of noise_type=color
+    gm_color_noise_kernel_size: 51 #should be an odd number
+    gm_color_noise_kernel_sigma: 2.0
