@@ -141,3 +141,13 @@ the smoothness of the random fluctuations in the model and in fact can be estima
 - **_vfe.pdf_**: The individual values of the **_Variational Free Energy (VFE)_** at any given time through the entire state estimation cycle.
 
 ---
+## Citation
+If you used this code in your work, please cite our paper.
+```bibtex
+@misc{neuroai-workshop-2024,
+  author       = {Mehran Hossein Zadeh Bazargani, Szymon Urbas, Karl Friston},
+  title        = {Brain in the Dark: Design Principles for Neuromimetic Inference under the Free Energy Principle},
+  howpublished = {NeuroAI workshop, NeurIPs},
+  year         = {2024},
+  note         = {Non-archival workshop paper},
+}
