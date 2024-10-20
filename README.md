@@ -8,11 +8,11 @@ implemented using Python and Pytorch running on CPU.
 <table>
   <tr>
     <td style="text-align: center;">
-      <img src="example/x.png" width="300" alt="Hidden state x" />
+      <img src="example/x.png" width="400" alt="Hidden state x" />
       <figcaption>Hidden state x</figcaption>
     </td>
     <td style="text-align: center;">
-      <img src="example/xhat.png" width="300" alt="Inferred state xhat" />
+      <img src="example/xhat.png" width="400" alt="Inferred state xhat" />
       <figcaption>Inferred state xhat</figcaption>
     </td>
     <td style="text-align: center;">
