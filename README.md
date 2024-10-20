@@ -3,23 +3,25 @@
 This is a Python/Pytorch package, where the neuronal message-passing in a one-layer Predictive Coding (PC) network has
 implemented using Python and Pytorch running on CPU.
 ---
-<div style="text-align: center;">
-  <h3>Hidden State Inference using a One-Layer Predictive Coding Network</h3>
-  <div style="display: flex; justify-content: center;">
-    <figure style="margin: 0 10px;">
-      <img src="example\x.png" width="200" />
+<h3 style="text-align: center;">Hidden State Inference using a One-Layer Predictive Coding Network</h3>
+
+<table>
+  <tr>
+    <td style="text-align: center;">
+      <img src="example/x.png" width="300" alt="Hidden state x" />
       <figcaption>Hidden state x</figcaption>
-    </figure>
-    <figure style="margin: 0 10px;">
-      <img src="example\xhat.png" width="200" />
+    </td>
+    <td style="text-align: center;">
+      <img src="example/xhat.png" width="300" alt="Inferred state xhat" />
       <figcaption>Inferred state xhat</figcaption>
-    </figure>
-    <figure style="margin: 0 10px;">
-      <img src="example\fa.png" width="200" />
+    </td>
+    <td style="text-align: center;">
+      <img src="example/fa.png" width="300" alt="Evolution of Free Action during inference" />
       <figcaption>Evolution of Free Action during inference</figcaption>
-    </figure>
-  </div>
-</div>
+    </td>
+  </tr>
+</table>
+
 
 ---
 # Installing required packages
