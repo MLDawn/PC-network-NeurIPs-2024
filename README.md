@@ -7,15 +7,15 @@ implemented using Python and Pytorch running on CPU.
   <h3>Hidden State Inference using a One-Layer Predictive Coding Network</h3>
   <div style="display: flex; justify-content: center;">
     <figure style="margin: 0 10px;">
-      <img src="example\x.png" width="300" />
+      <img src="example\x.png" width="200" />
       <figcaption>Hidden state x</figcaption>
     </figure>
     <figure style="margin: 0 10px;">
-      <img src="example\xhat.png" width="300" />
+      <img src="example\xhat.png" width="200" />
       <figcaption>Inferred state xhat</figcaption>
     </figure>
     <figure style="margin: 0 10px;">
-      <img src="example\fa.png" width="300" />
+      <img src="example\fa.png" width="200" />
       <figcaption>Evolution of Free Action during inference</figcaption>
     </figure>
   </div>
