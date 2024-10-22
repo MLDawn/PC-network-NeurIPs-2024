@@ -30,7 +30,7 @@ def compute(gen_mu,f, kx, dx):
         # if i > 0, then it means we are generating predictions for x'',x''', etc.
         # This requries the Jacobian of f() evaluated at mu_x
         else:
-            pred.append(torch.matmul(jacob_f_eval.T, gen_mu[i]))
+            pred.append(torch.matmul(jacob_f_eval, gen_mu[i]))
     pred = torch.stack(pred)
     #Build the ground-truth vector (it should have a zero vector at the end, which is the regulariser)
     gt = torch.cat((gen_mu[1:], torch.zeros(1,dx)),dim=0)

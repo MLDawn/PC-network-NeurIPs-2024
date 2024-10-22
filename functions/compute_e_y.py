@@ -18,7 +18,7 @@ def compute(gen_mu, gen_y, g, ky):
         # if i > 0, then it means we are generating predictions for y',y'', etc.
         # This requires the Jacobian of g() evaluated at mu_x
         else:
-            pred.append(torch.matmul(jacob_g_eval.T,gen_mu[i]))
+            pred.append(torch.matmul(jacob_g_eval,gen_mu[i]))
 
     pred = torch.stack(pred)
     # calculate the prediction error
