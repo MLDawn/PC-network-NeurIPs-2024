@@ -31,7 +31,7 @@ cd MY_DIRECTORY
 ```
 Then clone the repository on your machine:
 ```commandline
-git clone https://github.com/MLDawn/PC-network-NeurIPs-2024.git/
+git clone https://github.com/MLDawn/PC-network-NeurIPs-2024.git
 ```
 Go inside the cloned repository:
 
