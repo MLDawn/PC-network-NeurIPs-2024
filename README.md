@@ -31,12 +31,12 @@ cd MY_DIRECTORY
 ```
 Then clone the repository on your machine:
 ```commandline
-git clone https://anonymous.4open.science/r/one-layer-PC-network-4D1F/
+git clone https://github.com/MLDawn/PC-network-NeurIPs-2024.git/
 ```
 Go inside the cloned repository:
 
 ```commandline
-cd one-layer-PC-network-4D1F/
+cd PC-network-NeurIPs-2024/
 ```
 Create a conda environment with your name of choice, **_ENVIRONMENT_NAME_**, with Python version 3.11.5:
 ```commandline
