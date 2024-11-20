@@ -146,10 +146,11 @@ the smoothness of the random fluctuations in the model and in fact can be estima
 ## Citation
 If you used this code in your work, please cite our paper.
 ```bibtex
-@misc{neuroai-workshop-2024,
-  author       = {Mehran Hossein Zadeh Bazargani, Szymon Urbas, Karl Friston},
-  title        = {Brain in the Dark: Design Principles for Neuromimetic Inference under the Free Energy Principle},
-  howpublished = {NeuroAI workshop, NeurIPs},
-  year         = {2024},
-  note         = {Non-archival workshop paper},
+@inproceedings{
+    bazargani2024brain,
+    title={Brain in the Dark: Design Principles for Neuromimetic Inference under the Free Energy Principle},
+    author={Mehran Hossein Zadeh Bazargani and Szymon Urbas and Karl Friston},
+    booktitle={The First Workshop on NeuroAI @ NeurIPS2024},
+    year={2024},
+    url={https://openreview.net/forum?id=noN17FcjMB}
 }
