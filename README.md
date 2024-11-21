@@ -150,7 +150,7 @@ If you used this code in your work, please cite our paper.
     bazargani2024brain,
     title={Brain in the Dark: Design Principles for Neuromimetic Inference under the Free Energy Principle},
     author={Mehran Hossein Zadeh Bazargani and Szymon Urbas and Karl Friston},
-    booktitle={The First Workshop on NeuroAI @ NeurIPS2024},
+    booktitle={The First Workshop on NeuroAI at the 38th Conference on Neural Information Processing Systems (NeurIPS 2024)},
     year={2024},
     url={https://openreview.net/forum?id=noN17FcjMB}
 }
